@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block start %}
+        <script src="" async defer></script>
+        <table border="1px">
+            <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Eligible to vote</th>
+            </tr>
+            {% for p in peoples%}
+            <tr>
+                <td>{{p.name}}</td>
+                <td>{{p.age}}</td>
+                <td>{% if p.age > 18 %}yes{% else %} No{% endif %}</td>
+            </tr>
+            {% endfor %}
+        </table>
+   {% endblock %}
