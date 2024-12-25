@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block start %}
+<h2 style="text-align:center;">Add a Receipe Here........</h2>
+<form  class="col-6 mx-auto card p-3 shadow-1g" style="margin:0 auto;">
+    <div class="mb-3 ">
+      <label for="exampleInputEmail1" class="form-label">Receipe name</label>
+      <input type="text" class="form-control" >
+     
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Description</label>
+    <textarea name="form-control" rows="3" cols="50"></textarea>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="file" class="form-control" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Receipe Image</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  
+{% endblock %}
